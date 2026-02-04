@@ -3,8 +3,8 @@ import java.io.*;
 
 public class WordleGame {
 
-    private int wordLen;
-    private int numGuess;
+    private final int wordLen;
+    private final int numGuess;
     private boolean gameStarted; // TODO: Implement game state, start, finish, fail, etc.
 
     private String curWord; // Only for normal wordle; figure out later
@@ -147,7 +147,7 @@ public class WordleGame {
     private void printLetterMap(Map<Character, ArrayList<Integer>> letterMap) {
 //        System.out.println("Printing out letterMap:");
         for (char c : letterMap.keySet()) {
-            System.out.println("" + c + ": " + letterMap.get(c).toString());
+            System.out.println(c + ": " + letterMap.get(c).toString());
         }
     }
 }
