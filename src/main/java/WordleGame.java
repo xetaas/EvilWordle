@@ -60,11 +60,17 @@ public class WordleGame {
         if (word.length() != wordLen)
             throw new IllegalArgumentException("Given word's length does not match the game's set word length.");
 
-        System.out.println("Guess = " + word + ", Answer = " + curWord);
+//        System.out.println("Guess = " + word + ", Answer = " + curWord);
 //        System.out.println("Feedback: \t" + getWordFeedback(word, curWord));
 //        System.out.println();
 
-        return getWordFeedback(word, curWord);
+        // Alternate printing
+//        System.out.println(curWord);
+//        System.out.println(word);
+//        System.out.println(getWordFeedback(curWord, word));
+//        System.out.println();
+
+        return getWordFeedback(curWord, word);
     }
 
 
